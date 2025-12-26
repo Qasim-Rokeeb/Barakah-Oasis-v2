@@ -158,9 +158,8 @@ export default function Home() {
               Bringing Relief, Hope, and Honor to Muslims in Need
             </h1>
             <p className="text-lg text-muted-foreground text-pretty mb-8 leading-relaxed">
-              In a world where hardship too often strips people of their dignity, we bring relief, hope, and honor back
-              into the lives of Muslims facing struggle. Through the generosity of Muslims worldwide, we channel hope
-              and dignity to communities most in need.
+              Severe hardship can rob people of their dignity. We restore hope and respect to Muslims enduring it,
+              channeling donations from Muslims worldwide to the most vulnerable communities.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild>
@@ -230,10 +229,6 @@ export default function Home() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-xl mb-3">Our Story</h3>
-                  <p className="text-muted-foreground leading-relaxed mb-4">
-                    In a world where hardship too often strips people of their dignity, we found our calling: to bring
-                    relief, hope, and honor back into the lives of Muslims facing struggle.
-                  </p>
                   <p className="text-muted-foreground leading-relaxed">
                     Barakah Oasis Foundation began with a simple act of giving during Ramadan, and from that moment, we
                     knew this work had to continue. Year after year, we've been blessed to serve those in need—elders,
@@ -314,7 +309,7 @@ export default function Home() {
                 description="We've seen how forgotten many of our elders feel. Through iCare, we provide food, basic needs, and loan offsets—a reminder that old age should be honored, not endured in silence."
                 amount="₦25,000"
                 impact="Support for one elder"
-                imageUrl="/ramadan-iftar-food-distribution-community-gatherin.jpg"
+                imageUrl="/elderly-care-muslim-africa-dignified-seniors.jpg"
                 raised={1850000}
                 target={3000000}
               />
@@ -324,7 +319,7 @@ export default function Home() {
                 description="Each Ramadan, we share the gift of ifṭār with Muslims who otherwise go hungry, turning moments of hardship into moments of gratitude."
                 amount="₦5,000"
                 impact="Feeds 10 people"
-                imageUrl="/ramadan-iftar-meal-food-distribution-charity-niger.jpg"
+                imageUrl="/ramadan-iftar-family-meal-muslim-africa-sharing.jpg"
                 raised={2850000}
                 target={5000000}
               />
@@ -334,7 +329,7 @@ export default function Home() {
                 description="We've stood with students balancing faith and study during Ramadan, ensuring that hunger never stands between them and their worship."
                 amount="₦3,000"
                 impact="One student meal"
-                imageUrl="/laptop-student-technology-education-programming-af.jpg"
+                imageUrl="/student-studying-ramadan-muslim-africa-education.jpg"
                 raised={950000}
                 target={2000000}
               />
@@ -353,7 +348,7 @@ export default function Home() {
                 description="We believe empowerment is the best charity. Through this program, we provide laptops, mentorship, and guidance for Muslims stepping into tech or launching startups—helping them turn their potential into purpose."
                 amount="₦150,000"
                 impact="1 complete laptop setup"
-                imageUrl="/laptop-student-technology-education-programming-af.jpg"
+                imageUrl="/techie-laptop-muslim-africa-entrepreneur-startup.jpg"
                 raised={1200000}
                 target={5000000}
               />
@@ -363,7 +358,7 @@ export default function Home() {
                 description="Many widows carry both grief and responsibility. Our goal is to provide them with basic amenities and programs that help them rebuild their lives with confidence and not dependence."
                 amount="₦50,000"
                 impact="Monthly support package"
-                imageUrl="/ramadan-iftar-food-distribution-community-gatherin.jpg"
+                imageUrl="/widow-empowerment-muslim-africa-support-community.jpg"
                 raised={450000}
                 target={3000000}
               />
@@ -373,7 +368,7 @@ export default function Home() {
                 description="Every child deserves a chance to dream. We support orphans with school fees and hostel accommodations, nurturing their growth so they can become contributors to the ummah."
                 amount="₦100,000"
                 impact="One year tuition + hostel"
-                imageUrl="/laptop-student-technology-education-programming-af.jpg"
+                imageUrl="/orphan-education-muslim-africa-schooling.jpg"
                 raised={650000}
                 target={4000000}
               />
@@ -383,7 +378,7 @@ export default function Home() {
                 description="Every act of giving leaves a trace, not only in someone's life but also in our own story with Allah. Through this initiative, we invite Muslims to support ongoing, impact-driven projects that earn them lasting reward with Allah."
                 amount="₦500,000"
                 impact="Ongoing sadaqah jariyah"
-                imageUrl="/mosque-construction-building-islamic-architecture-.jpg"
+                imageUrl="/mosque-under-construction-africa-building-islamic.jpg"
                 raised={2500000}
                 target={10000000}
               />
@@ -393,7 +388,7 @@ export default function Home() {
                 description="Every child deserves a healthy beginning and every mother deserves care. Through this project, we support pregnant women by covering medical bills, delivery costs, and postnatal care."
                 amount="₦75,000"
                 impact="Full maternity support"
-                imageUrl="/ramadan-iftar-food-distribution-community-gatherin.jpg"
+                imageUrl="/pregnant-woman-healthcare-muslim-africa-maternity.jpg"
                 raised={320000}
                 target={2500000}
               />
@@ -403,7 +398,7 @@ export default function Home() {
                 description="Even in death, dignity remains sacred. The Barzakh Fund helps families cover the costs of burial and final rites—ensuring every believer is laid to rest with honor, mercy, and community prayer."
                 amount="₦30,000"
                 impact="Dignified burial support"
-                imageUrl="/mosque-construction-building-islamic-architecture-.jpg"
+                imageUrl="/burial-dignity-muslim-africa-cemetery-funeral-respect.jpg"
                 raised={180000}
                 target={1500000}
               />
@@ -531,8 +526,8 @@ export default function Home() {
                   <Mail className="h-6 w-6 text-primary" />
                 </div>
               </div>
-              <h3 className="font-semibold mb-2">Website</h3>
-              <p className="text-sm text-muted-foreground">barakahoasis.netlify.app</p>
+              <h3 className="font-semibold mb-2">Email</h3>
+              <p className="text-sm text-muted-foreground">barakahoasis@gmail.com</p>
             </Card>
           </div>
         </div>
