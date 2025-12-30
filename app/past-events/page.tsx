@@ -6,36 +6,58 @@ import Link from "next/link"
 const pastEvents = [
   {
     id: 1,
-    title: "iCare for Elderly",
-    date: "Ongoing",
-    location: "Across Nigeria",
-    beneficiaries: 500,
+    title: "Debt Relief & Medical Support",
+    date: "2026",
+    location: "Bauchi · Zaria · Lagos · Ilorin · Ibadan",
+    beneficiaries: "10+ people and hospital patients",
     description:
-      "We've seen how forgotten many of our elders feel. Through iCare, we provide food, basic needs, and loan offsets, a reminder that old age should be honored, not endured in silence.",
-    imageUrl: "/elderly-care-muslim-africa-dignified-seniors.jpg",
-    impact: "500+ elders supported monthly, dignity restored",
+      "Foodstuffs for elders, medical bills settled in Lagos University Teaching Hospital and Ilorin General Hospital, debts cleared for a late Muslim woman's family, and support for an elderly woman in Ibadan.",
+    imageUrl: "/community-care-nigeria-health-support.jpg",
+    impact: "Multi-city aid combining food security with critical healthcare",
   },
   {
     id: 2,
-    title: "Feed a Fasting Muslim",
-    date: "Annual - Ramadan",
-    location: "Multiple Cities",
-    beneficiaries: 2000,
+    title: "Ramadan Family Support",
+    date: "2024",
+    location: "Ilorin, Kwara State",
+    beneficiaries: 20,
     description:
-      "Each Ramadan, we share the gift of iftar with Muslims who otherwise go hungry, turning moments of hardship into moments of gratitude.",
-    imageUrl: "/ramadan-iftar-family-meal-muslim-africa-sharing.jpg",
-    impact: "2,000+ iftar meals served, 50+ volunteers",
+      "Foodstuffs and cash assistance delivered to less-privileged families in Ilorin to help them observe Ramadan with dignity.",
+    imageUrl: "/ramadan-food-relief-ilorin-families.jpg",
+    impact: "15–20 families equipped with food staples and stipends",
   },
   {
     id: 3,
-    title: "Feed a Fasting Student",
-    date: "Annual - Ramadan",
-    location: "Educational Centers",
-    beneficiaries: 300,
+    title: "Feed a Fasting Muslim",
+    date: "2023",
+    location: "Ibadan · Lagos · Ilorin",
+    beneficiaries: "100+ fasting Muslims",
     description:
-      "We've stood with students balancing faith and study during Ramadan, ensuring that hunger never stands between them and their worship.",
-    imageUrl: "/student-studying-ramadan-muslim-africa-education.jpg",
-    impact: "300+ students supported, focus and worship maintained",
+      "Purchased and distributed foodstuffs to fasting Muslims across three cities, ensuring they could break their fasts without hardship.",
+    imageUrl: "/ramadan-iftar-multi-city-nigeria.jpg",
+    impact: "Expanded reach beyond Kwara to Oyo and Lagos",
+  },
+  {
+    id: 4,
+    title: "Feed a Fasting Student & Orphans",
+    date: "2022",
+    location: "University of Ilorin · Ilorin Orphanage",
+    beneficiaries: 150,
+    description:
+      "Provided iftar meals to fasting students at the University of Ilorin and delivered foodstuffs to an orphanage home in Ilorin.",
+    imageUrl: "/ramadan-students-orphanage-support-ilorin.jpg",
+    impact: "150+ students and orphans reached with Ramadan meals",
+  },
+  {
+    id: 5,
+    title: "Feed a Fasting Student",
+    date: "2021",
+    location: "University of Ilorin · Tanke, Ilorin",
+    beneficiaries: 150,
+    description:
+      "Served iftar meals to fasting Muslim students and extended support to needy neighbors on the streets of Tanke, Ilorin.",
+    imageUrl: "/ramadan-iftar-students-ilorin-street-relief.jpg",
+    impact: "150+ students and community members supported",
   },
 ]
 
@@ -71,7 +93,13 @@ export default function PastEventsPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2 max-w-6xl mx-auto">
-            {pastEvents.map((event) => (
+            {pastEvents.map((event) => {
+              const beneficiaryLabel =
+                typeof event.beneficiaries === "number"
+                  ? `${event.beneficiaries.toLocaleString()} beneficiaries`
+                  : `${event.beneficiaries}`
+
+              return (
               <Card key={event.id} className="overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="relative h-64 w-full overflow-hidden">
                   <img
@@ -95,7 +123,7 @@ export default function PastEventsPage() {
                     </div>
                     <div className="flex items-center gap-1">
                       <Users className="h-4 w-4" />
-                      <span>{event.beneficiaries.toLocaleString()} beneficiaries</span>
+                      <span>{beneficiaryLabel}</span>
                     </div>
                   </div>
 
@@ -106,7 +134,8 @@ export default function PastEventsPage() {
                   </div>
                 </div>
               </Card>
-            ))}
+              )
+            })}
           </div>
         </div>
       </section>
