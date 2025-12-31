@@ -296,112 +296,137 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mb-16">
-            <h3 className="text-2xl font-bold mb-6 text-center">Past Projects</h3>
-            <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
-              These acts may seem small, but to hundreds of lives, they've meant the world—A meal, A smile, A renewed
-              sense of dignity.
-            </p>
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              <ProgramCard
-                icon={<Users className="h-8 w-8" />}
-                title="iCare for Elderly"
-                description="We've seen how forgotten many of our elders feel. Through iCare, we provide food, basic needs, and loan offsets—a reminder that old age should be honored, not endured in silence."
-                amount="₦25,000"
-                impact="Support for one elder"
-                imageUrl="/elderly-care-muslim-africa-dignified-seniors.jpg"
-                raised={1850000}
-                target={3000000}
-              />
-              <ProgramCard
-                icon={<Heart className="h-8 w-8" />}
-                title="Feed a Fasting Muslim"
-                description="Each Ramadan, we share the gift of ifṭār with Muslims who otherwise go hungry, turning moments of hardship into moments of gratitude."
-                amount="₦5,000"
-                impact="Feeds 10 people"
-                imageUrl="/ramadan-iftar-family-meal-muslim-africa-sharing.jpg"
-                raised={2850000}
-                target={5000000}
-              />
-              <ProgramCard
-                icon={<BookOpen className="h-8 w-8" />}
-                title="Feed a Fasting Student"
-                description="We've stood with students balancing faith and study during Ramadan, ensuring that hunger never stands between them and their worship."
-                amount="₦3,000"
-                impact="One student meal"
-                imageUrl="/student-studying-ramadan-muslim-africa-education.jpg"
-                raised={950000}
-                target={2000000}
-              />
+          <div className="space-y-20">
+            <div>
+              <h3 className="text-2xl font-bold mb-6 text-center">Active Campaign</h3>
+              <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
+                Join us in making an immediate impact right now.
+              </p>
+              <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-1 max-w-2xl mx-auto">
+                <ProgramCard
+                  icon={<Heart className="h-8 w-8" />}
+                  title="Feed a Fasting Soul - Ramadan 2025"
+                  description="This Ramadan, we're calling on the ummah to answer the hunger of our brothers and sisters. Every ifṭār meal is an act of worship, every donation a seed of sadaqah jariyah. Join us in transforming moments of hunger into moments of gratitude."
+                  amount="₦5,000"
+                  impact="Feeds 10 people at ifṭār"
+                  imageUrl="/ramadan-iftar-family-meal-muslim-africa-sharing.jpg"
+                  raised={4200000}
+                  target={10000000}
+                  status="ongoing"
+                />
+              </div>
             </div>
-          </div>
 
-          <div>
-            <h3 className="text-2xl font-bold mb-6 text-center">Future Projects</h3>
-            <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Building lasting impact through programs designed to empower and uplift our community.
-            </p>
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              <ProgramCard
-                icon={<Laptop className="h-8 w-8" />}
-                title="Nurture A Muslim Techie/Entrepreneur"
-                description="We believe empowerment is the best charity. Through this program, we provide laptops, mentorship, and guidance for Muslims stepping into tech or launching startups—helping them turn their potential into purpose."
-                amount="₦150,000"
-                impact="1 complete laptop setup"
-                imageUrl="/techie-laptop-muslim-africa-entrepreneur-startup.jpg"
-                raised={1200000}
-                target={5000000}
-              />
-              <ProgramCard
-                icon={<Smile className="h-8 w-8" />}
-                title="Empower A Widow"
-                description="Many widows carry both grief and responsibility. Our goal is to provide them with basic amenities and programs that help them rebuild their lives with confidence and not dependence."
-                amount="₦50,000"
-                impact="Monthly support package"
-                imageUrl="/widow-empowerment-muslim-africa-support-community.jpg"
-                raised={450000}
-                target={3000000}
-              />
-              <ProgramCard
-                icon={<BookOpen className="h-8 w-8" />}
-                title="Educate An Orphan"
-                description="Every child deserves a chance to dream. We support orphans with school fees and hostel accommodations, nurturing their growth so they can become contributors to the ummah."
-                amount="₦100,000"
-                impact="One year tuition + hostel"
-                imageUrl="/orphan-education-muslim-africa-schooling.jpg"
-                raised={650000}
-                target={4000000}
-              />
-              <ProgramCard
-                icon={<Mosque className="h-8 w-8" />}
-                title="Build a House in Jannah"
-                description="Every act of giving leaves a trace, not only in someone's life but also in our own story with Allah. Through this initiative, we invite Muslims to support ongoing, impact-driven projects that earn them lasting reward with Allah."
-                amount="₦500,000"
-                impact="Ongoing sadaqah jariyah"
-                imageUrl="/mosque-under-construction-africa-building-islamic.jpg"
-                raised={2500000}
-                target={10000000}
-              />
-              <ProgramCard
-                icon={<Baby className="h-8 w-8" />}
-                title="Care for a Pregnant Woman"
-                description="Every child deserves a healthy beginning and every mother deserves care. Through this project, we support pregnant women by covering medical bills, delivery costs, and postnatal care."
-                amount="₦75,000"
-                impact="Full maternity support"
-                imageUrl="/pregnant-woman-healthcare-muslim-africa-maternity.jpg"
-                raised={320000}
-                target={2500000}
-              />
-              <ProgramCard
-                icon={<Mosque className="h-8 w-8" />}
-                title="Barzakh Fund"
-                description="Even in death, dignity remains sacred. The Barzakh Fund helps families cover the costs of burial and final rites—ensuring every believer is laid to rest with honor, mercy, and community prayer."
-                amount="₦30,000"
-                impact="Dignified burial support"
-                imageUrl="/burial-dignity-muslim-africa-cemetery-funeral-respect.jpg"
-                raised={180000}
-                target={1500000}
-              />
+            <div>
+              <h3 className="text-2xl font-bold mb-6 text-center">Future Projects</h3>
+              <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
+                Building lasting impact through programs designed to empower and uplift our community.
+              </p>
+              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                <ProgramCard
+                  icon={<Laptop className="h-8 w-8" />}
+                  title="Nurture A Muslim Techie/Entrepreneur"
+                  description="We believe empowerment is the best charity. Through this program, we provide laptops, mentorship, and guidance for Muslims stepping into tech or launching startups—helping them turn their potential into purpose."
+                  amount="₦150,000"
+                  impact="1 complete laptop setup"
+                  imageUrl="/techie-laptop-muslim-africa-entrepreneur-startup.jpg"
+                  raised={1200000}
+                  target={5000000}
+                />
+                <ProgramCard
+                  icon={<Smile className="h-8 w-8" />}
+                  title="Empower A Widow"
+                  description="Many widows carry both grief and responsibility. Our goal is to provide them with basic amenities and programs that help them rebuild their lives with confidence and not dependence."
+                  amount="₦50,000"
+                  impact="Monthly support package"
+                  imageUrl="/widow-empowerment-muslim-africa-support-community.jpg"
+                  raised={450000}
+                  target={3000000}
+                />
+                <ProgramCard
+                  icon={<BookOpen className="h-8 w-8" />}
+                  title="Educate An Orphan"
+                  description="Every child deserves a chance to dream. We support orphans with school fees and hostel accommodations, nurturing their growth so they can become contributors to the ummah."
+                  amount="₦100,000"
+                  impact="One year tuition + hostel"
+                  imageUrl="/orphan-education-muslim-africa-schooling.jpg"
+                  raised={650000}
+                  target={4000000}
+                />
+                <ProgramCard
+                  icon={<Mosque className="h-8 w-8" />}
+                  title="Build a House in Jannah"
+                  description="Every act of giving leaves a trace, not only in someone's life but also in our own story with Allah. Through this initiative, we invite Muslims to support ongoing, impact-driven projects that earn them lasting reward with Allah."
+                  amount="₦500,000"
+                  impact="Ongoing sadaqah jariyah"
+                  imageUrl="/mosque-under-construction-africa-building-islamic.jpg"
+                  raised={2500000}
+                  target={10000000}
+                />
+                <ProgramCard
+                  icon={<Baby className="h-8 w-8" />}
+                  title="Care for a Pregnant Woman"
+                  description="Every child deserves a healthy beginning and every mother deserves care. Through this project, we support pregnant women by covering medical bills, delivery costs, and postnatal care."
+                  amount="₦75,000"
+                  impact="Full maternity support"
+                  imageUrl="/pregnant-woman-healthcare-muslim-africa-maternity.jpg"
+                  raised={320000}
+                  target={2500000}
+                />
+                <ProgramCard
+                  icon={<Mosque className="h-8 w-8" />}
+                  title="Barzakh Fund"
+                  description="Even in death, dignity remains sacred. The Barzakh Fund helps families cover the costs of burial and final rites—ensuring every believer is laid to rest with honor, mercy, and community prayer."
+                  amount="₦30,000"
+                  impact="Dignified burial support"
+                  imageUrl="/burial-dignity-muslim-africa-cemetery-funeral-respect.jpg"
+                  raised={180000}
+                  target={1500000}
+                />
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-bold mb-6 text-center">Past Projects</h3>
+              <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
+                These acts may seem small, but to hundreds of lives, they've meant the world—A meal, A smile, A renewed
+                sense of dignity.
+              </p>
+              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                <ProgramCard
+                  icon={<Users className="h-8 w-8" />}
+                  title="iCare for Elderly"
+                  description="We've seen how forgotten many of our elders feel. Through iCare, we provide food, basic needs, and loan offsets—a reminder that old age should be honored, not endured in silence."
+                  amount="₦25,000"
+                  impact="Support for one elder"
+                  imageUrl="/elderly-care-muslim-africa-dignified-seniors.jpg"
+                  raised={1850000}
+                  target={3000000}
+                  status="completed"
+                />
+                <ProgramCard
+                  icon={<Heart className="h-8 w-8" />}
+                  title="Feed a Fasting Muslim"
+                  description="Each Ramadan, we share the gift of ifṭār with Muslims who otherwise go hungry, turning moments of hardship into moments of gratitude."
+                  amount="₦5,000"
+                  impact="Feeds 10 people"
+                  imageUrl="/ramadan-iftar-family-meal-muslim-africa-sharing.jpg"
+                  raised={2850000}
+                  target={5000000}
+                  status="completed"
+                />
+                <ProgramCard
+                  icon={<BookOpen className="h-8 w-8" />}
+                  title="Feed a Fasting Student"
+                  description="We've stood with students balancing faith and study during Ramadan, ensuring that hunger never stands between them and their worship."
+                  amount="₦3,000"
+                  impact="One student meal"
+                  imageUrl="/student-studying-ramadan-muslim-africa-education.jpg"
+                  raised={950000}
+                  target={2000000}
+                  status="completed"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -467,7 +492,7 @@ export default function Home() {
           <div className="mx-auto max-w-2xl">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4 text-balance">Be a Part of the Oasis of Hope</h2>
-              <p className="text-muted-foreground text-pretty leading-relaxed mb-4">
+              <p className="text-lg text-muted-foreground text-pretty mb-8 leading-relaxed">
                 "And whatever you spend of good, it will be fully repaid to you, and you will not be wronged."
               </p>
               <p className="text-sm text-muted-foreground italic">— Surah Al-Baqarah (2:272)</p>
