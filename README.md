@@ -34,7 +34,7 @@ This website serves as the digital presence for Barakah Oasis, enabling donors t
 
 ## Project Structure
 
-```
+\`\`\`
 barakah-oasis/
 ├── app/
 │   ├── actions/
@@ -54,7 +54,7 @@ barakah-oasis/
 ├── public/
 │   └── *.jpg                     # Images for hero, programs, and events
 └── README.md
-```
+\`\`\`
 
 ## Getting Started
 
@@ -66,37 +66,37 @@ barakah-oasis/
 ### Installation
 
 1. Clone the repository:
-```bash
+\`\`\`bash
 git clone https://github.com/Qasim-Rokeeb/Barakah-Oasis-v2.git
 cd Barakah-Oasis-v2
-```
+\`\`\`
 
 2. Install dependencies:
-```bash
+\`\`\`bash
 npm install
 # or
 yarn install
 # or
 pnpm install
-```
+\`\`\`
 
 3. Run the development server:
-```bash
+\`\`\`bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-```
+\`\`\`
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the website.
 
 ### Building for Production
 
-```bash
+\`\`\`bash
 npm run build
 npm start
-```
+\`\`\`
 
 ## Configuration
 
@@ -104,13 +104,13 @@ npm start
 
 Update the bank account information in `components/donation-form.tsx`:
 
-```tsx
+\`\`\`tsx
 const bankDetails = {
   bankName: "First Bank of Nigeria",
   accountName: "Barakah Oasis Foundation",
   accountNumber: "1234567890"
 }
-```
+\`\`\`
 
 ### Program Goals
 
