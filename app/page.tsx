@@ -26,10 +26,30 @@ import { ImpactStats } from "@/components/impact-stats"
 import { TestimonialCard } from "@/components/testimonial-card"
 import { DonationForm } from "@/components/donation-form"
 import { VolunteerForm } from "@/components/volunteer-form"
-import { useState } from "react"
+import { useState, useEffect, useRef } from "react"
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
+  useEffect(() => {
+    const observerCallback = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view")
+        }
+      })
+    }
+
+    const observer = new IntersectionObserver(observerCallback, {
+      threshold: 0.1,
+      rootMargin: "0px 0px -100px 0px",
+    })
+
+    const sections = document.querySelectorAll(".scroll-visible")
+    sections.forEach((section) => observer.observe(section))
+
+    return () => observer.disconnect()
+  }, [])
 
   return (
     <div className="min-w-full">
@@ -144,7 +164,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-background to-muted/20 py-20 md:py-32">
+      <section className="relative overflow-hidden bg-gradient-to-b from-background to-muted/20 py-20 md:py-32 scroll-visible">
         <div className="absolute inset-0 opacity-10">
           <img
             src="/mosque-silhouette-nigeria-charity-community-helpin.jpg"
@@ -176,14 +196,14 @@ export default function Home() {
       </section>
 
       {/* Impact Stats */}
-      <section className="py-16 bg-primary/5">
+      <section className="py-16 bg-primary/5 scroll-visible">
         <div className="container mx-auto px-4">
           <ImpactStats />
         </div>
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 scroll-mt-16">
+      <section id="about" className="py-20 scroll-mt-16 scroll-visible">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -287,7 +307,7 @@ export default function Home() {
       </section>
 
       {/* Programs Section */}
-      <section id="programs" className="py-20 scroll-mt-16 bg-muted/30">
+      <section id="programs" className="py-20 scroll-mt-16 bg-muted/30 scroll-visible">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4 text-balance">Our Programs</h2>
@@ -433,7 +453,7 @@ export default function Home() {
       </section>
 
       {/* Impact Stories */}
-      <section id="impact" className="py-20">
+      <section id="impact" className="py-20 scroll-visible">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4 text-balance">Why It Matters</h2>
@@ -487,7 +507,7 @@ export default function Home() {
       </section>
 
       {/* Donation Section */}
-      <section id="donate" className="py-20 bg-muted/30 scroll-mt-16">
+      <section id="donate" className="py-20 bg-muted/30 scroll-mt-16 scroll-visible">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-2xl">
             <div className="text-center mb-12">
@@ -503,7 +523,7 @@ export default function Home() {
       </section>
 
       {/* Volunteer Section */}
-      <section id="volunteer" className="py-20 scroll-mt-16">
+      <section id="volunteer" className="py-20 scroll-mt-16 scroll-visible">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-2xl">
             <div className="text-center mb-12">
@@ -518,7 +538,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-muted/30 scroll-mt-16">
+      <section id="contact" className="py-20 bg-muted/30 scroll-mt-16 scroll-visible">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4 text-balance">Get In Touch</h2>
