@@ -7,7 +7,7 @@ const pastEvents = [
   {
     id: 1,
     title: "Debt Relief & Medical Support",
-    date: "2026",
+    date: "2025",
     location: "Bauchi · Zaria · Lagos · Ilorin · Ibadan",
     beneficiaries: "10+ people and hospital patients",
     description:
