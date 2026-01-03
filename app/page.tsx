@@ -19,6 +19,7 @@ import {
   Shield,
   HandHeart,
   Smile,
+  ArrowUp,
 } from "lucide-react"
 import Link from "next/link"
 import { ProgramCard } from "@/components/program-card"
@@ -30,6 +31,20 @@ import { useState, useEffect, useRef } from "react"
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [showScrollTop, setShowScrollTop] = useState(false)
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" })
+  }
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 300)
+    }
+
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
   useEffect(() => {
     const observerCallback = (entries: IntersectionObserverEntry[]) => {
@@ -642,6 +657,17 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      {/* Scroll to Top Button */}
+      {showScrollTop && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-8 right-8 bg-primary hover:bg-primary/90 text-primary-foreground p-3 rounded-full shadow-lg transition-all duration-300 z-40"
+          aria-label="Scroll to top"
+        >
+          <ArrowUp className="h-6 w-6" />
+        </button>
+      )}
     </div>
   )
 }
