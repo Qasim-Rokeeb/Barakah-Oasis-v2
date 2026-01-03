@@ -1,9 +1,9 @@
 export function ImpactStats() {
   const stats = [
-    { value: "5,000+", label: "Meals Provided" },
-    { value: "12", label: "Mosques Built" },
-    { value: "150+", label: "Techies Empowered" },
-    { value: "₦25M+", label: "Funds Distributed" },
+    { value: "6,000+", label: "Meals Provided" },
+    { value: "74", label: "Elders Supported" },
+    { value: "3", label: "Completed Projects" },
+    { value: "₦5.65M", label: "Funds Distributed" },
   ]
 
   return (

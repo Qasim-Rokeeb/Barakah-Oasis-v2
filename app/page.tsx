@@ -352,6 +352,7 @@ export default function Home() {
                   imageUrl="/techie-laptop-muslim-africa-entrepreneur-startup.jpg"
                   raised={1200000}
                   target={5000000}
+                  status="future"
                 />
                 <ProgramCard
                   icon={<Smile className="h-8 w-8" />}
@@ -362,6 +363,7 @@ export default function Home() {
                   imageUrl="/widow-empowerment-muslim-africa-support-community.jpg"
                   raised={450000}
                   target={3000000}
+                  status="future"
                 />
                 <ProgramCard
                   icon={<BookOpen className="h-8 w-8" />}
@@ -372,6 +374,7 @@ export default function Home() {
                   imageUrl="/orphan-education-muslim-africa-schooling.jpg"
                   raised={650000}
                   target={4000000}
+                  status="future"
                 />
                 <ProgramCard
                   icon={<Mosque className="h-8 w-8" />}
@@ -382,6 +385,7 @@ export default function Home() {
                   imageUrl="/mosque-under-construction-africa-building-islamic.jpg"
                   raised={2500000}
                   target={10000000}
+                  status="future"
                 />
                 <ProgramCard
                   icon={<Baby className="h-8 w-8" />}
@@ -392,6 +396,7 @@ export default function Home() {
                   imageUrl="/pregnant-woman-healthcare-muslim-africa-maternity.jpg"
                   raised={320000}
                   target={2500000}
+                  status="future"
                 />
                 <ProgramCard
                   icon={<Mosque className="h-8 w-8" />}
@@ -402,6 +407,7 @@ export default function Home() {
                   imageUrl="/burial-dignity-muslim-africa-cemetery-funeral-respect.jpg"
                   raised={180000}
                   target={1500000}
+                  status="future"
                 />
               </div>
             </div>

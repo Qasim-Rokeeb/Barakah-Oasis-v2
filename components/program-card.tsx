@@ -14,7 +14,7 @@ interface ProgramCardProps {
   imageUrl?: string
   raised: number
   target: number
-  status?: "active" | "completed" | "ongoing" // added "ongoing" status for special highlighting
+  status?: "active" | "completed" | "ongoing" | "future" // added "future" status to hide raised amounts
 }
 
 export function ProgramCard({
@@ -31,6 +31,7 @@ export function ProgramCard({
   const progressPercentage = (raised / target) * 100
   const isCompleted = status === "completed"
   const isOngoing = status === "ongoing" // identify ongoing projects
+  const isFuture = status === "future" // identify future projects
 
   return (
     <Card
@@ -78,7 +79,9 @@ export function ProgramCard({
         <div className="mb-4 space-y-3">
           <div className="flex justify-between text-sm">
             <span className="text-muted-foreground">Raised</span>
-            <span className={`font-semibold ${isOngoing ? "text-accent" : ""}`}>₦{raised.toLocaleString()}</span>
+            <span className={`font-semibold ${isOngoing ? "text-accent" : ""}`}>
+              {isFuture ? "₦₦₦" : `₦${raised.toLocaleString()}`}
+            </span>
           </div>
           <Progress
             value={progressPercentage}
