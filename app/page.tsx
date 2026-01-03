@@ -57,11 +57,17 @@ export default function Home() {
 
     const observer = new IntersectionObserver(observerCallback, {
       threshold: 0.1,
-      rootMargin: "0px 0px -100px 0px",
+      rootMargin: "0px 0px -50px 0px",
     })
 
     const sections = document.querySelectorAll(".scroll-visible")
-    sections.forEach((section) => observer.observe(section))
+    sections.forEach((section) => {
+      observer.observe(section)
+      // Check if element is already visible on page load
+      if (section.getBoundingClientRect().top < window.innerHeight) {
+        section.classList.add("in-view")
+      }
+    })
 
     return () => observer.disconnect()
   }, [])
@@ -337,7 +343,7 @@ export default function Home() {
               <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
                 Join us in making an immediate impact right now.
               </p>
-              <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-1 max-w-2xl mx-auto">
+              <div className="grid gap-6 grid-cols-1 w-full max-w-2xl mx-auto px-0">
                 <ProgramCard
                   icon={<Heart className="h-8 w-8" />}
                   title="Feed a Fasting Soul - Ramadan 2025"
@@ -357,7 +363,7 @@ export default function Home() {
               <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
                 Building lasting impact through programs designed to empower and uplift our community.
               </p>
-              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              <div className="grid gap-4 sm:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                 <ProgramCard
                   icon={<Laptop className="h-8 w-8" />}
                   title="Nurture A Muslim Techie/Entrepreneur"
@@ -433,7 +439,7 @@ export default function Home() {
                 These acts may seem small, but to hundreds of lives, they've meant the world—A meal, A smile, A renewed
                 sense of dignity.
               </p>
-              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              <div className="grid gap-4 sm:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                 <ProgramCard
                   icon={<Users className="h-8 w-8" />}
                   title="iCare for Elderly"
