@@ -56,8 +56,8 @@ export default function Home() {
     }
 
     const observer = new IntersectionObserver(observerCallback, {
-      threshold: 0.1,
-      rootMargin: "0px 0px -50px 0px",
+      threshold: 0.05,
+      rootMargin: "0px 0px 0px 0px",
     })
 
     const sections = document.querySelectorAll(".scroll-visible")
@@ -69,7 +69,19 @@ export default function Home() {
       }
     })
 
-    return () => observer.disconnect()
+    // Fallback: ensure sections become visible after a short delay
+    const timeout = setTimeout(() => {
+      sections.forEach((section) => {
+        if (!section.classList.contains("in-view")) {
+          section.classList.add("in-view")
+        }
+      })
+    }, 500)
+
+    return () => {
+      observer.disconnect()
+      clearTimeout(timeout)
+    }
   }, [])
 
   return (

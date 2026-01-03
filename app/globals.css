@@ -188,3 +188,10 @@
 .scroll-visible:not(.in-view) {
   transform: translateY(30px);
 }
+/* Mobile: ensure elements are visible by default on smaller screens */
+@media (max-width: 768px) {
+  .scroll-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
