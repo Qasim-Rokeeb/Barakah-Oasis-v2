@@ -330,7 +330,7 @@ export default function Home() {
                   amount="₦5,000"
                   impact="Feeds 10 people at ifṭār"
                   imageUrl="/ramadan-iftar-family-meal-muslim-africa-sharing.jpg"
-                  raised={4200000}
+                  raised={0}
                   target={10000000}
                   status="ongoing"
                 />
