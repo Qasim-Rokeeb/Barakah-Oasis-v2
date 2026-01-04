@@ -391,7 +391,7 @@ export default function Home() {
                   icon={<Laptop className="h-8 w-8" />}
                   title="Nurture A Muslim Techie/Entrepreneur"
                   description="We believe empowerment is the best charity. Through this program, we provide laptops, mentorship, and guidance for Muslims stepping into tech or launching startups—helping them turn their potential into purpose."
-                  amount="₦150,000"
+                  amount="₦250,000"
                   impact="1 complete laptop setup"
                   imageUrl="/techie-laptop-muslim-africa-entrepreneur-startup.jpg"
                   raised={0}
