@@ -116,17 +116,17 @@ export function DonationForm() {
           <div className="bg-muted/50 rounded-lg p-4 space-y-3">
             <div>
               <p className="text-xs text-muted-foreground mb-1">Bank Name</p>
-              <p className="font-semibold">First Bank of Nigeria</p>
+              <p className="font-semibold">Moniepoint</p>
             </div>
             <div>
               <p className="text-xs text-muted-foreground mb-1">Account Name</p>
-              <p className="font-semibold">Barakah Oasis Foundation</p>
+              <p className="font-semibold">Haroon Nafeesah</p>
             </div>
             <div>
               <p className="text-xs text-muted-foreground mb-1">Account Number</p>
               <div className="flex items-center justify-between bg-background rounded-md p-3 border">
-                <p className="font-semibold text-lg">1234567890</p>
-                <Button size="sm" variant="ghost" onClick={() => copyToClipboard("1234567890")} className="h-8 w-8 p-0">
+                <p className="font-semibold text-lg">8181429211</p>
+                <Button size="sm" variant="ghost" onClick={() => copyToClipboard("8181429211")} className="h-8 w-8 p-0">
                   {copiedAccount ? <Check className="h-4 w-4 text-green-600" /> : <Copy className="h-4 w-4" />}
                 </Button>
               </div>
@@ -137,8 +137,8 @@ export function DonationForm() {
           <div className="bg-accent/50 rounded-lg p-4 text-sm text-muted-foreground">
             <p className="leading-relaxed">
               After completing your transfer, please send your payment confirmation to{" "}
-              <span className="font-medium text-foreground">donations@barakahoasis.org</span> or WhatsApp us at{" "}
-              <span className="font-medium text-foreground">+234 800 123 4567</span>
+              <span className="font-medium text-foreground">barakahoasis@gmail.com</span> or WhatsApp us at{" "}
+              <span className="font-medium text-foreground">+234 903 550 1084</span>
             </p>
           </div>
 

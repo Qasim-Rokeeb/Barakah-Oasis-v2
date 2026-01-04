@@ -357,25 +357,36 @@ export default function Home() {
               </p>
               <div className="grid gap-6 grid-cols-1 w-full max-w-2xl mx-auto px-0">
                 <ProgramCard
-                  icon={<Heart className="h-8 w-8" />}
-                  title="Feed a Fasting Soul - Ramadan 2025"
-                  description="This Ramadan, we're calling on the ummah to answer the hunger of our brothers and sisters. Every ifṭār meal is an act of worship, every donation a seed of sadaqah jariyah. Join us in transforming moments of hunger into moments of gratitude."
-                  amount="₦5,000"
-                  impact="Feeds 10 people at ifṭār"
-                  imageUrl="/ramadan-iftar-family-meal-muslim-africa-sharing.jpg"
+                  icon={<Baby className="h-8 w-8" />}
+                  title="Care for a Pregnant Woman"
+                  description="Every child deserves a healthy beginning and every mother deserves care. Through this project, we support pregnant women by covering medical bills, delivery costs, and postnatal care."
+                  amount="₦75,000"
+                  impact="Full maternity support"
+                  imageUrl="/pregnant-woman-healthcare-muslim-africa-maternity.jpg"
                   raised={0}
-                  target={10000000}
+                  target={2500000}
                   status="ongoing"
                 />
               </div>
             </div>
 
             <div>
-              <h3 className="text-2xl font-bold mb-6 text-center">Future Projects</h3>
+              <h3 className="text-2xl font-bold mb-6 text-center">Active Projects</h3>
               <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
                 Building lasting impact through programs designed to empower and uplift our community.
               </p>
               <div className="grid gap-4 sm:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                <ProgramCard
+                  icon={<Heart className="h-8 w-8" />}
+                  title="Feed a Fasting Soul - Ramadan 2026"
+                  description="This Ramadan, we're calling on the ummah to answer the hunger of our brothers and sisters. Every ifṭār meal is an act of worship, every donation a seed of sadaqah jariyah. Join us in transforming moments of hunger into moments of gratitude."
+                  amount="₦5,000"
+                  impact="Feeds 5 people at ifṭār"
+                  imageUrl="/ramadan-iftar-family-meal-muslim-africa-sharing.jpg"
+                  raised={0}
+                  target={10000000}
+                  status="ongoing"
+                />
                 <ProgramCard
                   icon={<Laptop className="h-8 w-8" />}
                   title="Nurture A Muslim Techie/Entrepreneur"
@@ -383,9 +394,9 @@ export default function Home() {
                   amount="₦150,000"
                   impact="1 complete laptop setup"
                   imageUrl="/techie-laptop-muslim-africa-entrepreneur-startup.jpg"
-                  raised={1200000}
+                  raised={0}
                   target={5000000}
-                  status="future"
+                  status="active"
                 />
                 <ProgramCard
                   icon={<Smile className="h-8 w-8" />}
@@ -394,9 +405,9 @@ export default function Home() {
                   amount="₦50,000"
                   impact="Monthly support package"
                   imageUrl="/widow-empowerment-muslim-africa-support-community.jpg"
-                  raised={450000}
+                  raised={0}
                   target={3000000}
-                  status="future"
+                  status="active"
                 />
                 <ProgramCard
                   icon={<BookOpen className="h-8 w-8" />}
@@ -405,9 +416,9 @@ export default function Home() {
                   amount="₦100,000"
                   impact="One year tuition + hostel"
                   imageUrl="/orphan-education-muslim-africa-schooling.jpg"
-                  raised={650000}
+                  raised={0}
                   target={4000000}
-                  status="future"
+                  status="active"
                 />
                 <ProgramCard
                   icon={<Mosque className="h-8 w-8" />}
@@ -416,20 +427,9 @@ export default function Home() {
                   amount="₦500,000"
                   impact="Ongoing sadaqah jariyah"
                   imageUrl="/mosque-under-construction-africa-building-islamic.jpg"
-                  raised={2500000}
+                  raised={0}
                   target={10000000}
-                  status="future"
-                />
-                <ProgramCard
-                  icon={<Baby className="h-8 w-8" />}
-                  title="Care for a Pregnant Woman"
-                  description="Every child deserves a healthy beginning and every mother deserves care. Through this project, we support pregnant women by covering medical bills, delivery costs, and postnatal care."
-                  amount="₦75,000"
-                  impact="Full maternity support"
-                  imageUrl="/pregnant-woman-healthcare-muslim-africa-maternity.jpg"
-                  raised={320000}
-                  target={2500000}
-                  status="future"
+                  status="active"
                 />
                 <ProgramCard
                   icon={<Mosque className="h-8 w-8" />}
@@ -438,9 +438,9 @@ export default function Home() {
                   amount="₦30,000"
                   impact="Dignified burial support"
                   imageUrl="/burial-dignity-muslim-africa-cemetery-funeral-respect.jpg"
-                  raised={180000}
+                  raised={0}
                   target={1500000}
-                  status="future"
+                  status="active"
                 />
               </div>
             </div>
@@ -483,6 +483,17 @@ export default function Home() {
                   imageUrl="/student-studying-ramadan-muslim-africa-education.jpg"
                   raised={950000}
                   target={2000000}
+                  status="completed"
+                />
+                <ProgramCard
+                  icon={<Smile className="h-8 w-8" />}
+                  title="Empower A Widow - 2024"
+                  description="We supported widows with basic amenities and programs that helped them rebuild their lives with confidence and not dependence."
+                  amount="₦50,000"
+                  impact="Monthly support package"
+                  imageUrl="/widow-empowerment-muslim-africa-support-community.jpg"
+                  raised={450000}
+                  target={450000}
                   status="completed"
                 />
               </div>
