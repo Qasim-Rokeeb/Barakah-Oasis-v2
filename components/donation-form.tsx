@@ -134,14 +134,6 @@ export function DonationForm() {
             </div>
           </div>
 
-          <div className="bg-accent/50 rounded-lg p-4 text-sm text-muted-foreground">
-            <p className="leading-relaxed">
-              After completing your transfer, please send your payment confirmation to{" "}
-              <span className="font-medium text-foreground">barakahoasis@gmail.com</span> or WhatsApp us at{" "}
-              <span className="font-medium text-foreground">+234 903 550 1084</span>
-            </p>
-          </div>
-
           <Button onClick={() => setShowBankDetails(false)} variant="outline" className="w-full">
             Back
           </Button>
